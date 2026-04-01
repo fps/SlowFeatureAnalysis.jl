@@ -1,4 +1,4 @@
-Example data:
+Example data (see: https://www.ini.rub.de/PEOPLE/wiskott/Reprints/WiskottSejnowski-2002-NeurComp-LearningInvariances.pdf, figure 2):
 
 ```
 julia> UnicodePlots.lineplot(SFA.example_data()[:,1], width=80, canvas=UnicodePlots.DotCanvas)
