@@ -41,10 +41,9 @@ module SFA
         t = range(0, 2*π, T);
 
         x1 = sin.(t)+cos.(11*t).^2
-
         x2 = cos.(11*t)
 
-        x = hcat(x1, x2);
+        hcat(x1, x2);
     end
 
     export example_data
