@@ -40,12 +40,10 @@ module SFA
         T = 5000;
         t = range(0, 2*π, T);
 
-        noise = 0.0001
-
         x1 = sin.(t)+cos.(11*t).^2
-        x1 .+= noise * randn(size(x1)...);
+
         x2 = cos.(11*t)
-        x2 .+= noise * randn(size(x2)...);
+
         x = hcat(x1, x2);
     end
 
