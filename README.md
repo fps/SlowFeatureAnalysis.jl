@@ -1,7 +1,7 @@
 Example data (see: https://www.ini.rub.de/PEOPLE/wiskott/Reprints/WiskottSejnowski-2002-NeurComp-LearningInvariances.pdf, figure 2):
 
 ```
-julia> UnicodePlots.lineplot(SFA.example_data()[:,1], width=80, canvas=UnicodePlots.DotCanvas)
+julia> UnicodePlots.lineplot(SlowFeatureAnalysis.example_data()[:,1], width=80, canvas=UnicodePlots.DotCanvas)
       ┌────────────────────────────────────────────────────────────────────────────────┐
     2 │              :  ::  ::  :                                                      │
       │          :: .:: ::  :: :'. ::                                                  │
@@ -22,7 +22,7 @@ julia> UnicodePlots.lineplot(SFA.example_data()[:,1], width=80, canvas=UnicodePl
        0                                                                          5 000
 
 
-julia> UnicodePlots.lineplot(SFA.example_data()[:,2], width=80, canvas=UnicodePlots.DotCanvas)
+julia> UnicodePlots.lineplot(SlowFeatureAnalysis.example_data()[:,2], width=80, canvas=UnicodePlots.DotCanvas)
       ┌────────────────────────────────────────────────────────────────────────────────┐
     1 │:     ::     .:.     ::     ::     ::      ::     ::     ::     .:.     ::     :│
       │:     :':    : :    .::     ::     :':    :':     ::     ::.    : :    .':     :│
@@ -47,7 +47,7 @@ julia> UnicodePlots.lineplot(SFA.example_data()[:,2], width=80, canvas=UnicodePl
 Let's find the slowest moving feture:
 
 ```
-julia> UnicodePlots.lineplot(SFA.sfa(SFA.expand_quadratic(SFA.example_data()))[:,end], width=80, canvas=UnicodePlots.DotCanvas)
+julia> UnicodePlots.lineplot(SlowFeatureAnalysis.sfa(SlowFeatureAnalysis.expand_quadratic(SlowFeatureAnalysis.example_data()))[:,end], width=80, canvas=UnicodePlots.DotCanvas)
       ┌────────────────────────────────────────────────────────────────────────────────┐
     2 │                                                                                │
       │                                                                                │
@@ -73,7 +73,7 @@ julia> UnicodePlots.lineplot(SFA.sfa(SFA.expand_quadratic(SFA.example_data()))[:
 And the second slowest moving feature:
 
 ```
-julia> UnicodePlots.lineplot(SFA.sfa(SFA.expand_quadratic(SFA.example_data()))[:,end-1], width=80, canvas=UnicodePlots.DotCanvas)
+julia> UnicodePlots.lineplot(SlowFeatureAnalysis.sfa(SlowFeatureAnalysis.expand_quadratic(SlowFeatureAnalysis.example_data()))[:,end-1], width=80, canvas=UnicodePlots.DotCanvas)
       ┌────────────────────────────────────────────────────────────────────────────────┐
     2 │                                                                                │
       │                                                                                │
