@@ -1,7 +1,7 @@
 """
 Slow Feature Analysis
 """
-module SFA
+module SlowFeatureAnalysis
     import MultivariateStats
     import LinearAlgebra
 
