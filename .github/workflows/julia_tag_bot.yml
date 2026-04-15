@@ -1,0 +1,4 @@
+jobs:
+  - name: Julia TagBot
+    uses: JuliaRegistries/TagBot@v1.25.6
+
